@@ -1,0 +1,88 @@
+2018-05-16 00:05:02,997 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.sql.store.SqlStore as the Gora storage class.
+2018-05-16 00:05:03,019 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-05-16 00:05:03,266 WARN  snappy.LoadSnappy - Snappy native library not loaded
+2018-05-16 00:05:03,438 INFO  mapreduce.GoraRecordWriter - gora.buffer.write.limit = 10000
+2018-05-16 00:05:03,510 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2018-05-16 00:05:03,545 WARN  mapred.FileOutputCommitter - Output path is null in cleanup
+2018-05-16 00:05:03,545 WARN  mapred.LocalJobRunner - job_local942192388_0001
+java.lang.Exception: java.io.IOException: java.sql.BatchUpdateException: Unknown column 'fetchInterval' in 'field list'
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:354)
+Caused by: java.io.IOException: java.sql.BatchUpdateException: Unknown column 'fetchInterval' in 'field list'
+	at org.apache.gora.sql.store.SqlStore.flush(SqlStore.java:340)
+	at org.apache.gora.sql.store.SqlStore.close(SqlStore.java:185)
+	at org.apache.gora.mapreduce.GoraRecordWriter.close(GoraRecordWriter.java:55)
+	at org.apache.hadoop.mapred.MapTask$NewDirectOutputCollector.close(MapTask.java:650)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:767)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:364)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:223)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.BatchUpdateException: Unknown column 'fetchInterval' in 'field list'
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2028)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1451)
+	at org.apache.gora.sql.store.SqlStore.flush(SqlStore.java:328)
+	... 11 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'fetchInterval' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2624)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2127)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2427)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:1980)
+	... 13 more
+2018-05-16 00:05:37,400 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.sql.store.SqlStore as the Gora storage class.
+2018-05-16 00:05:37,423 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-05-16 00:05:37,459 WARN  snappy.LoadSnappy - Snappy native library not loaded
+2018-05-16 00:05:37,625 INFO  mapreduce.GoraRecordWriter - gora.buffer.write.limit = 10000
+2018-05-16 00:05:37,689 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2018-05-16 00:05:37,720 WARN  mapred.FileOutputCommitter - Output path is null in cleanup
+2018-05-16 00:05:37,721 WARN  mapred.LocalJobRunner - job_local699508899_0001
+java.lang.Exception: java.io.IOException: java.sql.BatchUpdateException: Unknown column 'fetchInterval' in 'field list'
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:354)
+Caused by: java.io.IOException: java.sql.BatchUpdateException: Unknown column 'fetchInterval' in 'field list'
+	at org.apache.gora.sql.store.SqlStore.flush(SqlStore.java:340)
+	at org.apache.gora.sql.store.SqlStore.close(SqlStore.java:185)
+	at org.apache.gora.mapreduce.GoraRecordWriter.close(GoraRecordWriter.java:55)
+	at org.apache.hadoop.mapred.MapTask$NewDirectOutputCollector.close(MapTask.java:650)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:767)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:364)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:223)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.BatchUpdateException: Unknown column 'fetchInterval' in 'field list'
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2028)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1451)
+	at org.apache.gora.sql.store.SqlStore.flush(SqlStore.java:328)
+	... 11 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'fetchInterval' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2624)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2127)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2427)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:1980)
+	... 13 more
