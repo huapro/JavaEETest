@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+    <dataSource name="source1" type="JdbcDataSource" driver="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://localhost:3306/baike?failOverReadOnly=false&amp;autoReconnect=true&amp;characterEncoding=utf8&amp;characterSetResults=utf8" user="root" password="root" batchSize="-1"convertType="true"/>
+    <document>
+        <entity name="baike" pk="id"  dataSource="source1" query="select t.ID, ty.`NAME`, t.TITLE, t.CONTENT, t.KEYWORD from VOCABULARY_ENTRY t,VOCABULARY_TYPE ty where t.TYPE_ID=ty.ID"  transformer="HTMLStripTransformer">
+            <field column="id" name="id"/>
+            <field column="NAME" name="vocabulary_type_s"/>
+            <field column="CONTENT" name="vocabulary_ch_text" stripHTML="true"/>
+            <field column="KEYWORD" name="vocabulary_ch_keyword"/>
+            <field column="TITLE" name="vocabulary_ch_title"/>
+        </entity>
+    </document>
+</dataConfig>

@@ -1,0 +1,54 @@
+2018-05-15 11:48:46.721 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2018-05-15 11:48:47.057 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.3
+2018-05-15 11:48:47.061 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-15 11:48:47.061 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yanglihua/Downloads/solr-6.6.3
+2018-05-15 11:48:47.089 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-15T11:48:47.064Z
+2018-05-15 11:48:47.089 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-15 11:48:47.106 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/yanglihua/Downloads/solr-6.6.3/server/solr
+2018-05-15 11:48:47.111 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/yanglihua/Downloads/solr-6.6.3/server/solr/solr.xml
+2018-05-15 11:48:47.518 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2018-05-15 11:49:17.793 WARN  (main) [   ] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 30.189 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup' sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+2018-05-15 11:49:17.830 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/yanglihua/Downloads/solr-6.6.3/server/solr
+2018-05-15 11:49:17.913 INFO  (main) [   ] o.e.j.s.Server Started @31737ms
+2018-05-15 11:49:40.390 INFO  (qtp717356484-13) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-05-15 11:49:40.767 INFO  (qtp717356484-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526384980601} status=0 QTime=24
+2018-05-15 11:49:40.794 INFO  (qtp717356484-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526384980603} status=0 QTime=51
+2018-05-15 11:49:40.817 INFO  (qtp717356484-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526384980603} status=0 QTime=15
+2018-05-15 11:49:45.264 INFO  (qtp717356484-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526384980601} status=0 QTime=0
+2018-05-15 11:49:45.266 INFO  (qtp717356484-30) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1526384980601} status=0 QTime=0
+2018-05-15 11:49:45.283 INFO  (qtp717356484-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526384980603} status=0 QTime=18
+2018-05-15 11:51:34.156 INFO  (qtp717356484-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=14
+2018-05-15 11:51:34.190 INFO  (qtp717356484-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=14
+2018-05-15 11:51:34.195 INFO  (qtp717356484-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=my_core&action=STATUS&wt=json} status=0 QTime=0
+2018-05-15 11:51:34.234 INFO  (qtp717356484-20) [   ] o.a.s.h.a.CoreAdminOperation core create command name=my_core&action=CREATE&instanceDir=my_core&wt=json
+2018-05-15 11:51:34.286 INFO  (qtp717356484-20) [   x:my_core] o.a.s.c.SolrResourceLoader [my_core] Added 53 libs to classloader, from paths: [/Users/yanglihua/Downloads/solr-6.6.3/contrib/clustering/lib, /Users/yanglihua/Downloads/solr-6.6.3/contrib/extraction/lib, /Users/yanglihua/Downloads/solr-6.6.3/contrib/langid/lib, /Users/yanglihua/Downloads/solr-6.6.3/contrib/velocity/lib, /Users/yanglihua/Downloads/solr-6.6.3/dist]
+2018-05-15 11:51:34.410 INFO  (qtp717356484-20) [   x:my_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.3
+2018-05-15 11:51:34.539 INFO  (qtp717356484-20) [   x:my_core] o.a.s.s.IndexSchema [my_core] Schema name=example-data-driven-schema
+2018-05-15 11:51:34.937 INFO  (qtp717356484-20) [   x:my_core] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2018-05-15 11:51:34.973 INFO  (qtp717356484-20) [   x:my_core] o.a.s.c.CoreContainer Creating SolrCore 'my_core' using configuration from instancedir /Users/yanglihua/Downloads/solr-6.6.3/server/solr/my_core, trusted=true
+2018-05-15 11:51:34.989 INFO  (qtp717356484-20) [   x:my_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-15 11:51:34.995 INFO  (qtp717356484-20) [   x:my_core] o.a.s.c.SolrCore [[my_core] ] Opening new SolrCore at [/Users/yanglihua/Downloads/solr-6.6.3/server/solr/my_core], dataDir=[/Users/yanglihua/Downloads/solr-6.6.3/server/solr/my_core/data/]
+2018-05-15 11:51:35.080 INFO  (qtp717356484-20) [   x:my_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-15 11:52:05.450 WARN  (qtp717356484-20) [   x:my_core] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 30.176 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup' sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+2018-05-15 11:52:05.494 INFO  (qtp717356484-20) [   x:my_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-15 11:52:05.494 INFO  (qtp717356484-20) [   x:my_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-15 11:52:05.500 INFO  (qtp717356484-20) [   x:my_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-15 11:52:05.500 INFO  (qtp717356484-20) [   x:my_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-15 11:52:05.512 INFO  (qtp717356484-20) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@607fac9e[my_core] main]
+2018-05-15 11:52:05.519 INFO  (qtp717356484-20) [   x:my_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yanglihua/Downloads/solr-6.6.3/server/solr/my_core/conf
+2018-05-15 11:52:05.530 INFO  (qtp717356484-20) [   x:my_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-15 11:52:05.535 INFO  (qtp717356484-20) [   x:my_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-15 11:52:05.537 INFO  (qtp717356484-20) [   x:my_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/yanglihua/Downloads/solr-6.6.3/server/solr/my_core/conf/elevate.xml
+2018-05-15 11:52:05.545 INFO  (qtp717356484-20) [   x:my_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2018-05-15 11:52:05.569 INFO  (searcherExecutor-7-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@607fac9e[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-05-15 11:52:05.569 INFO  (searcherExecutor-7-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-15 11:52:05.569 INFO  (searcherExecutor-7-thread-1-processing-x:my_core) [   x:my_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-15 11:52:05.571 INFO  (searcherExecutor-7-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.SolrCore [my_core] Registered new searcher Searcher@607fac9e[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-05-15 11:52:05.572 INFO  (qtp717356484-20) [   x:my_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1600530809431785472
+2018-05-15 11:52:05.577 INFO  (qtp717356484-20) [   x:my_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=my_core&action=CREATE&instanceDir=my_core&wt=json} status=0 QTime=31343
+2018-05-15 12:00:02.989 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=961712517
+2018-05-15 12:00:02.989 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2018-05-15 12:00:02.989 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2018-05-15 12:00:02.989 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2018-05-15 12:00:02.990 INFO  (coreCloseExecutor-12-thread-1) [   x:my_core] o.a.s.c.SolrCore [my_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@13f27a3f
+2018-05-15 12:00:02.994 INFO  (coreCloseExecutor-12-thread-1) [   x:my_core] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.my_core
